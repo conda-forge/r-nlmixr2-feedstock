@@ -1,4 +1,4 @@
-{% set version = "2.1.1" %}
+{% set version = "3.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nlmixr2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nlmixr2/nlmixr2_{{ version }}.tar.gz
-  sha256: ec2bca94863379a395796f7878cca152fefeeb3cded8a2585ea0f41913c123af
+  sha256: caa8d29a60fe5291d83359c81a96c417e20f05f241820b6fa517b58c2c14ea1b
 
 build:
   merge_build_host: true  # [win]
