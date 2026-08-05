@@ -1,4 +1,4 @@
-{% set version = "5.0.0" %}
+{% set version = "7.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nlmixr2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nlmixr2/nlmixr2_{{ version }}.tar.gz
-  sha256: ee307ed68d30f2093284ccbb79f431fc9d65c6877fc3dd767057f96fa24b9797
+  sha256: 039e7c1c276d44ece0ee679c570120bc505a63cbfe7fbbf27852e5890c83fa30
 
 build:
   number: 0
@@ -54,8 +54,8 @@ about:
   home: https://nlmixr2.org/
   dev_url: https://github.com/nlmixr2/nlmixr2/
   license: GPL-3.0-or-later
-  summary: Fit and compare nonlinear mixed-effects models in differential equations with flexible dosing information commonly seen in pharmacokinetics and pharmacodynamics (Almquist, Leander, and Jirstrand 2015 <doi:10.1007/s10928-015-9409-1>). Differential equation solving is by compiled C code provided in the 'rxode2'
-    package (Wang, Hallow, and James 2015 <doi:10.1002/psp4.12052>).
+  summary: Fit and compare nonlinear mixed-effects models in differential equations with flexible dosing information commonly seen in pharmacokinetics and pharmacodynamics (Almquist, Leander, and Jirstrand 2015 <doi:10.1007/s10928-015-9409-1>). Differential equation solving is by compiled C code provided in the 
+    'rxode2' package (Wang, Hallow, and James 2015 <doi:10.1002/psp4.12052>).
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
